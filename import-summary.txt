@@ -1,0 +1,422 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* .DS_Store
+* .gitignore
+* .idea\
+* .idea\.name
+* .idea\compiler.xml
+* .idea\copyright\
+* .idea\copyright\profiles_settings.xml
+* .idea\misc.xml
+* .idea\modules.xml
+* .idea\vcs.xml
+* .idea\workspace.xml
+* LICENSE
+* README.md
+* app\
+* app\build.gradle
+* app\libs\
+* app\libs\XPGWiFiSDK.jar
+* app\libs\easylink_only.jar
+* app\libs\libEsptouch_v0.3.3.4_3.jar
+* app\libs\nineoldandroids-2.4.0.jar
+* app\libs\simpleconfiglib.jar
+* app\libs\zxing.jar
+* app\src\
+* app\src\main\
+* app\src\main\AndroidManifest.xml
+* app\src\main\java\
+* app\src\main\java\com\
+* app\src\main\java\com\gizwits\
+* app\src\main\java\com\gizwits\framework\
+* app\src\main\java\com\gizwits\framework\XpgApplication.java
+* app\src\main\java\com\gizwits\framework\activity\
+* app\src\main\java\com\gizwits\framework\activity\BaseActivity.java
+* app\src\main\java\com\gizwits\framework\activity\FlushActivity.java
+* app\src\main\java\com\gizwits\framework\activity\account\
+* app\src\main\java\com\gizwits\framework\activity\account\ChangePswActivity.java
+* app\src\main\java\com\gizwits\framework\activity\account\ForgetPswActivity.java
+* app\src\main\java\com\gizwits\framework\activity\account\LoginActivity.java
+* app\src\main\java\com\gizwits\framework\activity\account\RegisterActivity.java
+* app\src\main\java\com\gizwits\framework\activity\account\UserManageActivity.java
+* app\src\main\java\com\gizwits\framework\activity\device\
+* app\src\main\java\com\gizwits\framework\activity\device\DeviceListActivity.java
+* app\src\main\java\com\gizwits\framework\activity\device\DeviceManageDetailActivity.java
+* app\src\main\java\com\gizwits\framework\activity\device\DeviceManageListActivity.java
+* app\src\main\java\com\gizwits\framework\activity\help\
+* app\src\main\java\com\gizwits\framework\activity\help\AboutActivity.java
+* app\src\main\java\com\gizwits\framework\activity\help\HelpActivity.java
+* app\src\main\java\com\gizwits\framework\activity\onboarding\
+* app\src\main\java\com\gizwits\framework\activity\onboarding\AirlinkActivity.java
+* app\src\main\java\com\gizwits\framework\activity\onboarding\AutoConfigActivity.java
+* app\src\main\java\com\gizwits\framework\activity\onboarding\BindingDeviceActivity.java
+* app\src\main\java\com\gizwits\framework\activity\onboarding\SearchDeviceActivity.java
+* app\src\main\java\com\gizwits\framework\activity\onboarding\SoftApConfigActivity.java
+* app\src\main\java\com\gizwits\framework\adapter\
+* app\src\main\java\com\gizwits\framework\adapter\AlarmListAdapter.java
+* app\src\main\java\com\gizwits\framework\adapter\DeviceListAdapter.java
+* app\src\main\java\com\gizwits\framework\adapter\ManageDetailsAdapter.java
+* app\src\main\java\com\gizwits\framework\adapter\ManageListAdapter.java
+* app\src\main\java\com\gizwits\framework\adapter\MenuDeviceAdapter.java
+* app\src\main\java\com\gizwits\framework\adapter\SearchListAdapter.java
+* app\src\main\java\com\gizwits\framework\adapter\WeekRepeatAdapter.java
+* app\src\main\java\com\gizwits\framework\config\
+* app\src\main\java\com\gizwits\framework\config\Configs.java
+* app\src\main\java\com\gizwits\framework\config\DeviceDetails.java
+* app\src\main\java\com\gizwits\framework\config\GizwitsErrorMsg.java
+* app\src\main\java\com\gizwits\framework\config\JsonKeys.java
+* app\src\main\java\com\gizwits\framework\entity\
+* app\src\main\java\com\gizwits\framework\entity\DeviceAlarm.java
+* app\src\main\java\com\gizwits\framework\sdk\
+* app\src\main\java\com\gizwits\framework\sdk\CmdCenter.java
+* app\src\main\java\com\gizwits\framework\sdk\SettingManager.java
+* app\src\main\java\com\gizwits\framework\utils\
+* app\src\main\java\com\gizwits\framework\utils\DensityUtil.java
+* app\src\main\java\com\gizwits\framework\utils\DialogManager.java
+* app\src\main\java\com\gizwits\framework\utils\Historys.java
+* app\src\main\java\com\gizwits\framework\utils\RegexUtils.java
+* app\src\main\java\com\gizwits\framework\utils\StringUtils.java
+* app\src\main\java\com\gizwits\framework\utils\SystemResource.java
+* app\src\main\java\com\gizwits\framework\widget\
+* app\src\main\java\com\gizwits\framework\widget\AboutVersionActivity.java
+* app\src\main\java\com\gizwits\framework\widget\ArrayWheelAdapter.java
+* app\src\main\java\com\gizwits\framework\widget\MyInputFilter.java
+* app\src\main\java\com\gizwits\framework\widget\NumericWheelAdapter.java
+* app\src\main\java\com\gizwits\framework\widget\OnWheelChangedListener.java
+* app\src\main\java\com\gizwits\framework\widget\OnWheelScrollListener.java
+* app\src\main\java\com\gizwits\framework\widget\RefreshableListView.java
+* app\src\main\java\com\gizwits\framework\widget\SlidingMenu.java
+* app\src\main\java\com\gizwits\framework\widget\WheelAdapter.java
+* app\src\main\java\com\gizwits\framework\widget\WheelView.java
+* app\src\main\java\com\gizwits\powersocket\
+* app\src\main\java\com\gizwits\powersocket\activity\
+* app\src\main\java\com\gizwits\powersocket\activity\control\
+* app\src\main\java\com\gizwits\powersocket\activity\control\AlarmListActicity.java
+* app\src\main\java\com\gizwits\powersocket\activity\control\AppointmentActivity.java
+* app\src\main\java\com\gizwits\powersocket\activity\control\MainControlActivity.java
+* app\src\main\java\com\xpg\
+* app\src\main\java\com\xpg\common\
+* app\src\main\java\com\xpg\common\device\
+* app\src\main\java\com\xpg\common\device\DensityUtils.java
+* app\src\main\java\com\xpg\common\device\KeyBoardUtils.java
+* app\src\main\java\com\xpg\common\device\ScreenUtils.java
+* app\src\main\java\com\xpg\common\system\
+* app\src\main\java\com\xpg\common\system\IntentUtils.java
+* app\src\main\java\com\xpg\common\useful\
+* app\src\main\java\com\xpg\common\useful\ByteUtils.java
+* app\src\main\java\com\xpg\common\useful\DateUtil.java
+* app\src\main\java\com\xpg\common\useful\JSONUtils.java
+* app\src\main\java\com\xpg\common\useful\NetworkUtils.java
+* app\src\main\java\com\xpg\common\useful\StringUtils.java
+* app\src\main\java\com\xpg\ui\
+* app\src\main\java\com\xpg\ui\utils\
+* app\src\main\java\com\xpg\ui\utils\BitmapUtils.java
+* app\src\main\java\com\xpg\ui\utils\DialogUtils.java
+* app\src\main\java\com\xpg\ui\utils\ToastUtils.java
+* app\src\main\java\zxing\
+* app\src\main\java\zxing\CaptureActivity.java
+* app\src\main\java\zxing\camera\
+* app\src\main\java\zxing\camera\AutoFocusManager.java
+* app\src\main\java\zxing\camera\CameraConfigurationManager.java
+* app\src\main\java\zxing\camera\CameraManager.java
+* app\src\main\java\zxing\camera\PreviewCallback.java
+* app\src\main\java\zxing\camera\open\
+* app\src\main\java\zxing\camera\open\OpenCameraInterface.java
+* app\src\main\java\zxing\decoding\
+* app\src\main\java\zxing\decoding\DecodeFormatManager.java
+* app\src\main\java\zxing\decoding\DecodeHandler.java
+* app\src\main\java\zxing\decoding\DecodeThread.java
+* app\src\main\java\zxing\utils\
+* app\src\main\java\zxing\utils\CaptureActivityHandler.java
+* app\src\main\java\zxing\utils\InactivityTimer.java
+* app\src\main\jniLibs\
+* app\src\main\jniLibs\armeabi\
+* app\src\main\jniLibs\armeabi\libXPGConnect.so
+* app\src\main\jniLibs\armeabi\libsimpleconfiglib.so
+* app\src\main\res\
+* app\src\main\res\.DS_Store
+* app\src\main\res\anim\
+* app\src\main\res\anim\rotate.xml
+* app\src\main\res\drawable-hdpi\
+* app\src\main\res\drawable-hdpi\ic_launcher.png
+* app\src\main\res\drawable-hdpi\icon_high.png
+* app\src\main\res\drawable-hdpi\icon_high_selected.png
+* app\src\main\res\drawable-hdpi\icon_low.png
+* app\src\main\res\drawable-hdpi\icon_low_selected.png
+* app\src\main\res\drawable-hdpi\icon_mid.png
+* app\src\main\res\drawable-hdpi\icon_mid_selected.png
+* app\src\main\res\drawable-hdpi\icon_shake.png
+* app\src\main\res\drawable-hdpi\icon_shake_selected.png
+* app\src\main\res\drawable-mdpi\
+* app\src\main\res\drawable-mdpi\ic_launcher.png
+* app\src\main\res\drawable-xhdpi\
+* app\src\main\res\drawable-xhdpi\about.png
+* app\src\main\res\drawable-xhdpi\add_icon.png
+* app\src\main\res\drawable-xhdpi\airlink_button.png
+* app\src\main\res\drawable-xhdpi\arrow_right_blue.png
+* app\src\main\res\drawable-xhdpi\arrow_right_gray.png
+* app\src\main\res\drawable-xhdpi\back_bt.png
+* app\src\main\res\drawable-xhdpi\barcode_frame.9.png
+* app\src\main\res\drawable-xhdpi\barcode_laser_line.png
+* app\src\main\res\drawable-xhdpi\bg.png
+* app\src\main\res\drawable-xhdpi\bg_main.png
+* app\src\main\res\drawable-xhdpi\button_blue_long.9.png
+* app\src\main\res\drawable-xhdpi\button_blue_short.9.png
+* app\src\main\res\drawable-xhdpi\button_gray_short.9.png
+* app\src\main\res\drawable-xhdpi\button_logout.png
+* app\src\main\res\drawable-xhdpi\confirm_icon.png
+* app\src\main\res\drawable-xhdpi\date_select_left.png
+* app\src\main\res\drawable-xhdpi\date_select_left2.png
+* app\src\main\res\drawable-xhdpi\date_select_mid.png
+* app\src\main\res\drawable-xhdpi\date_select_mid2.png
+* app\src\main\res\drawable-xhdpi\date_select_right.png
+* app\src\main\res\drawable-xhdpi\date_select_right2.png
+* app\src\main\res\drawable-xhdpi\details_icon1.png
+* app\src\main\res\drawable-xhdpi\details_icon2.png
+* app\src\main\res\drawable-xhdpi\details_icon3.png
+* app\src\main\res\drawable-xhdpi\details_icon4.png
+* app\src\main\res\drawable-xhdpi\details_icon5.png
+* app\src\main\res\drawable-xhdpi\details_icon6.png
+* app\src\main\res\drawable-xhdpi\details_icon7.png
+* app\src\main\res\drawable-xhdpi\details_icon8.png
+* app\src\main\res\drawable-xhdpi\details_icon9.png
+* app\src\main\res\drawable-xhdpi\device.png
+* app\src\main\res\drawable-xhdpi\device_icon_blue.png
+* app\src\main\res\drawable-xhdpi\device_icon_gray.png
+* app\src\main\res\drawable-xhdpi\failure.png
+* app\src\main\res\drawable-xhdpi\fault_tips.png
+* app\src\main\res\drawable-xhdpi\fault_tips_box.png
+* app\src\main\res\drawable-xhdpi\fault_tips_box_oneline.png
+* app\src\main\res\drawable-xhdpi\flush.png
+* app\src\main\res\drawable-xhdpi\guide.png
+* app\src\main\res\drawable-xhdpi\head_icon1.png
+* app\src\main\res\drawable-xhdpi\head_icon1_down.png
+* app\src\main\res\drawable-xhdpi\head_icon2.png
+* app\src\main\res\drawable-xhdpi\head_icon2_down.png
+* app\src\main\res\drawable-xhdpi\head_icon3.png
+* app\src\main\res\drawable-xhdpi\head_icon3_down.png
+* app\src\main\res\drawable-xhdpi\head_icon4.png
+* app\src\main\res\drawable-xhdpi\head_icon4_down.png
+* app\src\main\res\drawable-xhdpi\head_icon5.png
+* app\src\main\res\drawable-xhdpi\head_icon5_down.png
+* app\src\main\res\drawable-xhdpi\head_icon6.png
+* app\src\main\res\drawable-xhdpi\head_icon6_down.png
+* app\src\main\res\drawable-xhdpi\head_icon7.png
+* app\src\main\res\drawable-xhdpi\head_icon7_down.png
+* app\src\main\res\drawable-xhdpi\head_icon8.png
+* app\src\main\res\drawable-xhdpi\head_icon8_down.png
+* app\src\main\res\drawable-xhdpi\head_icon9.png
+* app\src\main\res\drawable-xhdpi\head_icon9_down.png
+* app\src\main\res\drawable-xhdpi\home_appointment1.png
+* app\src\main\res\drawable-xhdpi\home_appointment2.png
+* app\src\main\res\drawable-xhdpi\home_button.png
+* app\src\main\res\drawable-xhdpi\home_button_appoinment.png
+* app\src\main\res\drawable-xhdpi\home_icon.png
+* app\src\main\res\drawable-xhdpi\ic_launcher.png
+* app\src\main\res\drawable-xhdpi\icon_edit.png
+* app\src\main\res\drawable-xhdpi\icon_function.png
+* app\src\main\res\drawable-xhdpi\icon_left.png
+* app\src\main\res\drawable-xhdpi\icon_menu.png
+* app\src\main\res\drawable-xhdpi\icon_power.png
+* app\src\main\res\drawable-xhdpi\icon_regulate.png
+* app\src\main\res\drawable-xhdpi\icon_return.png
+* app\src\main\res\drawable-xhdpi\icon_right.png
+* app\src\main\res\drawable-xhdpi\icon_time.png
+* app\src\main\res\drawable-xhdpi\loading.png
+* app\src\main\res\drawable-xhdpi\login_bt.png
+* app\src\main\res\drawable-xhdpi\login_button_green.9.png
+* app\src\main\res\drawable-xhdpi\login_button_white.9.png
+* app\src\main\res\drawable-xhdpi\login_icon_key.png
+* app\src\main\res\drawable-xhdpi\login_icon_lock.png
+* app\src\main\res\drawable-xhdpi\login_icon_name.png
+* app\src\main\res\drawable-xhdpi\login_input_box.9.png
+* app\src\main\res\drawable-xhdpi\logo.png
+* app\src\main\res\drawable-xhdpi\logo2.png
+* app\src\main\res\drawable-xhdpi\logo3.png
+* app\src\main\res\drawable-xhdpi\logout_icon.png
+* app\src\main\res\drawable-xhdpi\maincontrol_bottom_bg_blue.png
+* app\src\main\res\drawable-xhdpi\menu_icon_back.png
+* app\src\main\res\drawable-xhdpi\power_big.png
+* app\src\main\res\drawable-xhdpi\power_off.png
+* app\src\main\res\drawable-xhdpi\power_on.png
+* app\src\main\res\drawable-xhdpi\return_icon.png
+* app\src\main\res\drawable-xhdpi\slib_about.png
+* app\src\main\res\drawable-xhdpi\slib_account.png
+* app\src\main\res\drawable-xhdpi\slib_arrow_down.png
+* app\src\main\res\drawable-xhdpi\slib_deviceicon.png
+* app\src\main\res\drawable-xhdpi\slib_help.png
+* app\src\main\res\drawable-xhdpi\slib_tick.png
+* app\src\main\res\drawable-xhdpi\softap_icon.png
+* app\src\main\res\drawable-xhdpi\start_time.png
+* app\src\main\res\drawable-xhdpi\step1.png
+* app\src\main\res\drawable-xhdpi\step2.png
+* app\src\main\res\drawable-xhdpi\step3.png
+* app\src\main\res\drawable-xhdpi\step4.png
+* app\src\main\res\drawable-xhdpi\step_connect.png
+* app\src\main\res\drawable-xhdpi\step_devicelist.png
+* app\src\main\res\drawable-xhdpi\step_inputpsw.png
+* app\src\main\res\drawable-xhdpi\step_inputpsw_2.png
+* app\src\main\res\drawable-xhdpi\step_press.png
+* app\src\main\res\drawable-xhdpi\step_register.png
+* app\src\main\res\drawable-xhdpi\step_search.png
+* app\src\main\res\drawable-xhdpi\success.png
+* app\src\main\res\drawable-xhdpi\switch_off.png
+* app\src\main\res\drawable-xhdpi\switch_off2.png
+* app\src\main\res\drawable-xhdpi\switch_on.png
+* app\src\main\res\drawable-xhdpi\switch_on2.png
+* app\src\main\res\drawable-xhdpi\time_set.png
+* app\src\main\res\drawable-xhdpi\top.png
+* app\src\main\res\drawable-xhdpi\top_short.png
+* app\src\main\res\drawable-xhdpi\top_tall.png
+* app\src\main\res\drawable-xxhdpi\
+* app\src\main\res\drawable-xxhdpi\ic_launcher.png
+* app\src\main\res\drawable\
+* app\src\main\res\drawable\image_progress.xml
+* app\src\main\res\drawable\ptr_pulltorefresh_arrow.png
+* app\src\main\res\drawable\selector_device_list_item.xml
+* app\src\main\res\drawable\selector_power.xml
+* app\src\main\res\drawable\selector_tick.xml
+* app\src\main\res\drawable\selector_week_repeat_left.xml
+* app\src\main\res\drawable\selector_week_repeat_mid.xml
+* app\src\main\res\drawable\selector_week_repeat_right.xml
+* app\src\main\res\drawable\selector_week_repeat_text_color.xml
+* app\src\main\res\drawable\text_selector.xml
+* app\src\main\res\drawable\toggle_selector.xml
+* app\src\main\res\drawable\toggle_selector2.xml
+* app\src\main\res\drawable\wheel_bg.xml
+* app\src\main\res\drawable\wheel_val.xml
+* app\src\main\res\drawable\wing_text_selector.xml
+* app\src\main\res\layout\
+* app\src\main\res\layout\activity_about.xml
+* app\src\main\res\layout\activity_airlink.xml
+* app\src\main\res\layout\activity_alarmlist.xml
+* app\src\main\res\layout\activity_appointment.xml
+* app\src\main\res\layout\activity_autoconfig.xml
+* app\src\main\res\layout\activity_binding.xml
+* app\src\main\res\layout\activity_capture.xml
+* app\src\main\res\layout\activity_change_pwd.xml
+* app\src\main\res\layout\activity_devicelist.xml
+* app\src\main\res\layout\activity_devices_info.xml
+* app\src\main\res\layout\activity_flush.xml
+* app\src\main\res\layout\activity_forget.xml
+* app\src\main\res\layout\activity_forget_reset.xml
+* app\src\main\res\layout\activity_help.xml
+* app\src\main\res\layout\activity_login.xml
+* app\src\main\res\layout\activity_main_control.xml
+* app\src\main\res\layout\activity_manage_device_list.xml
+* app\src\main\res\layout\activity_register.xml
+* app\src\main\res\layout\activity_register_mail.xml
+* app\src\main\res\layout\activity_searchdevice.xml
+* app\src\main\res\layout\activity_slibbar.xml
+* app\src\main\res\layout\activity_softap.xml
+* app\src\main\res\layout\activity_user_manage.xml
+* app\src\main\res\layout\activity_version.xml
+* app\src\main\res\layout\alarm_list_item.xml
+* app\src\main\res\layout\device_list_item.xml
+* app\src\main\res\layout\device_list_item_empty.xml
+* app\src\main\res\layout\device_list_item_header.xml
+* app\src\main\res\layout\dialog_2choose_timing_conditioner.xml
+* app\src\main\res\layout\dialog_alarm_for_conditioner.xml
+* app\src\main\res\layout\dialog_call.xml
+* app\src\main\res\layout\dialog_choose_timing_conditioner.xml
+* app\src\main\res\layout\dialog_disconnect.xml
+* app\src\main\res\layout\dialog_logout.xml
+* app\src\main\res\layout\dialog_no_network.xml
+* app\src\main\res\layout\dialog_power_off.xml
+* app\src\main\res\layout\dialog_psw_change.xml
+* app\src\main\res\layout\dialog_unbind.xml
+* app\src\main\res\layout\item_date_selected.xml
+* app\src\main\res\layout\manage_details_item.xml
+* app\src\main\res\layout\messagelist_head.xml
+* app\src\main\res\layout\search_list_item.xml
+* app\src\main\res\layout\slibbar_item.xml
+* app\src\main\res\layout\zxing_layout.xml
+* app\src\main\res\values-v11\
+* app\src\main\res\values-v11\styles.xml
+* app\src\main\res\values-v14\
+* app\src\main\res\values-v14\styles.xml
+* app\src\main\res\values\
+* app\src\main\res\values\arrays_mode.xml
+* app\src\main\res\values\colors.xml
+* app\src\main\res\values\ids.xml
+* app\src\main\res\values\strings.xml
+* app\src\main\res\values\styles.xml
+* app\src\main\resources\
+* app\src\main\resources\.DS_Store
+* app\src\main\resources\com\
+* app\src\main\resources\com\.DS_Store
+* app\src\main\resources\com\gizwits\
+* app\src\main\resources\com\gizwits\.DS_Store
+* app\src\main\resources\com\gizwits\powersocket\
+* app\src\main\resources\com\gizwits\powersocket\.DS_Store
+* app\src\main\resources\com\gizwits\powersocket\activity\
+* app\src\main\resources\com\gizwits\powersocket\activity\.DS_Store
+* app\src\main\resources\com\gizwits\powersocket\activity\control\
+* app\src\main\resources\com\gizwits\powersocket\activity\control\.DS_Store
+* build.gradle
+* gradle\
+* gradle\wrapper\
+* gradle\wrapper\gradle-wrapper.jar
+* gradle\wrapper\gradle-wrapper.properties
+* gradlew
+* gradlew.bat
+* ic_launcher-web.png
+* proguard-project.txt
+* settings.gradle
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:19.1.0
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => app\src\main\AndroidManifest.xml
+* libs\armeabi\libsimpleconfiglib.so => app\src\main\jniLibs\armeabi\libsimpleconfiglib.so
+* libs\armeabi\libXPGConnect.so => app\src\main\jniLibs\armeabi\libXPGConnect.so
+* libs\easylink_only.jar => app\libs\easylink_only.jar
+* libs\libEsptouch_v0.3.3.4_3.jar => app\libs\libEsptouch_v0.3.3.4_3.jar
+* libs\nineoldandroids-2.4.0.jar => app\libs\nineoldandroids-2.4.0.jar
+* libs\simpleconfiglib.jar => app\libs\simpleconfiglib.jar
+* libs\XPGWiFiSDK.jar => app\libs\XPGWiFiSDK.jar
+* libs\zxing.jar => app\libs\zxing.jar
+* res\ => app\src\main\res\
+* src\ => app\src\main\java\
+* src\.DS_Store => app\src\main\resources\.DS_Store
+* src\com\.DS_Store => app\src\main\resources\com\.DS_Store
+* src\com\gizwits\.DS_Store => app\src\main\resources\com\gizwits\.DS_Store
+* src\com\gizwits\powersocket\.DS_Store => app\src\main\resources\com\gizwits\powersocket\.DS_Store
+* src\com\gizwits\powersocket\activity\.DS_Store => app\src\main\resources\com\gizwits\powersocket\activity\.DS_Store
+* src\com\gizwits\powersocket\activity\control\.DS_Store => app\src\main\resources\com\gizwits\powersocket\activity\control\.DS_Store
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="F:\9-IoT\Cloud--Gizwit\Android\Gizwits-SmartSocket_Android\app\libs\libatmelsmartconfig.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="f7ce7aa7a2f3a9f0e2337146bed941358076780a">
+        <dex dex="F:\9-IoT\Cloud--Gizwit\Android\Gizwits-SmartSocket_Android\app\build\intermediates\pre-dexed\debug\libatmelsmartconfig-cde276c32c64c378a68b4c27c30e2928d63a6f7d.jar" />
+    </item>
+
+</items>
