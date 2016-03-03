@@ -31,7 +31,7 @@ public class AtmelSmartconfig {
         try {
             Log.d(TAG, "Trigger atmel smart config....................");
             mfastProvision = new fastProvision();
-            mfastProvision.startFastProvision(context,ssid,password,timeout);
+            mfastProvision.startFastProvision(context, ssid, password, timeout);
             this.isSmartconfigGoing = true;
         } catch (Exception e) {
             Log.e(TAG, e.getMessage());
@@ -40,14 +40,11 @@ public class AtmelSmartconfig {
     }
 
     public synchronized void stopAtmelsmartconfig() {
-//        if(this.mEasylinkPlus != null && this.isSmartconfigGoing) {
-//            Log.d(TAG, "Stop Atmel smart config................");
-//            this.mEasylinkPlus = EasyLink_plus.getInstence(this.ctx);
-//            this.mEasylinkPlus.stopTransmitting();
-//            this.isSmartconfigGoing = false;
-//        } else {
-//            Log.d(TAG, "Atmel smart config is already stopped........");
-//        }
+        if (mfastProvision != null && this.isSmartconfigGoing) {
+            mfastProvision.stopFastProvision();
+            this.isSmartconfigGoing = false;
+            mfastProvision = null;
+        }
     }
 
     private static class InstanceHolder {

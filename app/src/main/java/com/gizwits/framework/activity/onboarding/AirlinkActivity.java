@@ -18,8 +18,11 @@
 package com.gizwits.framework.activity.onboarding;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
+import java.util.concurrent.atomic.AtomicBoolean;
+
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
@@ -130,6 +133,7 @@ public class AirlinkActivity extends BaseActivity implements OnClickListener {
 		 */
 		CONFIG_SUCCESS,
 
+
 		/**
 		 * The toast.
 		 */
@@ -138,6 +142,7 @@ public class AirlinkActivity extends BaseActivity implements OnClickListener {
 
 	}
 
+	private AtomicBoolean isStopConfig = new AtomicBoolean(false);
 	/**
 	 * The handler.
 	 */
@@ -164,8 +169,12 @@ public class AirlinkActivity extends BaseActivity implements OnClickListener {
 				break;
 
 			case CONFIG_FAILED:
+				if (mode_temp == 0) {
+					AtmelSmartconfig.getInstance().stopAtmelsmartconfig();
+				}
 				showLayout(UI_STATE.Result);
 				break;
+
 
 			}
 		}
@@ -294,6 +303,28 @@ public class AirlinkActivity extends BaseActivity implements OnClickListener {
 
 	}
 
+	private void tryGetList() {
+		String uid = setmanager.getUid();
+		String token = setmanager.getToken();
+		mCenter.cGetBoundDevices(uid, token);
+	}
+
+	private void fastProvisionCheckLoop (){
+		(new Thread() {
+			public void run() {
+				Log.d(TAG, "Check loop start");
+				while (!isStopConfig.get())
+				{
+					try {
+						Thread.sleep(500);
+					} catch (Exception e) {
+						Log.e(TAG, e.getMessage());
+					}
+					//tryGetList();
+				}
+			}
+		}).start();
+	}
 	/**
 	 * Start airlink.
 	 */
@@ -312,10 +343,12 @@ public class AirlinkActivity extends BaseActivity implements OnClickListener {
 		//
 		types = new ArrayList<XPGWifiSDK.XPGWifiGAgentType>();
 		types.add(typeList.get(mode_temp));
-		if (mode_temp == 0)
-		{
+		if (mode_temp == 0) {
 			Log.d(TAG, "Choose to use atmel module");
-			AtmelSmartconfig.getInstance().startAtmelsmartconfig(this,strSSid,strPsw,60);
+			//handler.sendEmptyMessage(handler_key.CONFIG_START.ordinal());
+			fastProvisionCheckLoop ();
+			AtmelSmartconfig.getInstance().startAtmelsmartconfig(this, strSSid, strPsw, 60);
+
 		} else {
 			mCenter.cSetAirLink(strSSid, strPsw, types);
 		}
@@ -349,6 +382,16 @@ public class AirlinkActivity extends BaseActivity implements OnClickListener {
 	protected void didSetDeviceWifi(int error, XPGWifiDevice device) {
 		if (error == 0) {
 			handler.sendEmptyMessage(handler_key.CONFIG_SUCCESS.ordinal());
+		} else {
+			handler.sendEmptyMessage(handler_key.CONFIG_FAILED.ordinal());
+		}
+	}
+
+	protected void didDiscovered(int error, List<XPGWifiDevice> deviceList) {
+		deviceslist = deviceList;
+		isStopConfig.set(true);
+		if (error == 0) {
+			//handler.sendEmptyMessage(handler_key.CONFIG_SUCCESS.ordinal());
 		} else {
 			handler.sendEmptyMessage(handler_key.CONFIG_FAILED.ordinal());
 		}
