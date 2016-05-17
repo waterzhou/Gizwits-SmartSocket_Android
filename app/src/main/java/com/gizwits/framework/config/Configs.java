@@ -38,9 +38,6 @@ public class Configs {
 	
 	/**  指定该app对应设备的product_key，如果设定了过滤，会过滤出该peoduct_key对应的设备. */
 	public static final String PRODUCT_KEY = "6d244ccb816d4ddd8f2b3dc7f8ca5c6f";
-
-	/**  设定日志打印级别. */
-	public static final XPGWifiLogLevel LOG_LEVEL = XPGWifiLogLevel.XPGWifiLogLevelAll;
 	
 	/**  日志保存文件名. */
 	public static final String LOG_FILE_NAME = "BassApp.log";

@@ -391,9 +391,9 @@ public class CmdCenter {
 	 * @param isOn
 	 *            the is on
 	 */
-	public void cPowerOn(XPGWifiDevice xpgWifiDevice, boolean isOn) {
+	public synchronized void cPowerOn(XPGWifiDevice xpgWifiDevice, boolean isOn) {
 		cWrite(xpgWifiDevice, JsonKeys.ON_OFF, isOn);
-		new Timer().schedule(new timer(xpgWifiDevice), 1000);
+		new Timer().schedule(new timer(xpgWifiDevice), 5000);
 	}
 
 	/**

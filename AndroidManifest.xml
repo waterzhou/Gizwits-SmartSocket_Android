@@ -5,7 +5,7 @@
 
     <uses-sdk
         android:minSdkVersion="14"
-        android:targetSdkVersion="19" />
+        android:targetSdkVersion="23" />
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
@@ -20,13 +20,10 @@
     <uses-permission android:name="android.permission.FLASHLIGHT" />
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.VIBRATE" />
-    <!-- 乐鑫配置库中使用的权限（WIFI组播） -->
     <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
 
     <uses-feature android:name="android.hardware.camera" />
     <uses-feature android:name="android.hardware.camera.autofocus" />
-
-    <uses-permission android:name="android.permission.GET_TASKS" />
 
     <application
         android:name="com.gizwits.framework.XpgApplication"
@@ -42,15 +39,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.gizwits.framework.activity.BaseActivity" />
-        <activity android:name="com.gizwits.framework.activity.account.LoginActivity" />
+        <activity android:name="com.gizwits.framework.activity.BaseActivity"  android:screenOrientation="portrait"/>
+        <activity android:name="com.gizwits.framework.activity.account.LoginActivity"  android:screenOrientation="portrait"/>
         <activity android:name="com.gizwits.framework.activity.account.RegisterActivity" />
         <activity android:name="com.gizwits.framework.activity.account.ChangePswActivity" />
         <activity android:name="com.gizwits.framework.activity.account.ForgetPswActivity" />
         <activity android:name="com.gizwits.framework.activity.account.UserManageActivity" />
         <activity
             android:name="com.gizwits.framework.activity.device.DeviceListActivity"
-            android:launchMode="singleTask" />
+            android:launchMode="singleTask" android:screenOrientation="portrait" />
         <activity android:name="com.gizwits.framework.activity.device.DeviceManageListActivity" />
         <activity android:name="com.gizwits.framework.activity.device.DeviceManageDetailActivity" />
         <activity android:name="com.gizwits.framework.activity.onboarding.AirlinkActivity" />
@@ -60,7 +57,7 @@
         <activity android:name="com.gizwits.framework.activity.onboarding.GetPassAndBind" />
         <activity
             android:name="com.gizwits.framework.activity.onboarding.SearchDeviceActivity"
-            android:launchMode="singleTask" />
+            android:launchMode="singleTask" android:screenOrientation="portrait" />
         <activity android:name="com.gizwits.framework.activity.onboarding.SoftApConfigActivity" />
         <activity android:name="com.gizwits.framework.activity.help.AboutActivity" />
         <activity android:name="com.gizwits.framework.activity.help.HelpActivity" />
@@ -71,7 +68,7 @@
         <activity android:name="com.gizwits.powersocket.activity.slipbar.SlipBarActivity" />
         <activity
             android:name="com.gizwits.powersocket.activity.control.MainControlActivity"
-            android:launchMode="singleTask" />
+            android:launchMode="singleTask"  android:screenOrientation="portrait" />
         <activity android:name="com.gizwits.powersocket.activity.control.AppointmentActivity" />
         <activity android:name="com.gizwits.powersocket.activity.control.AlarmListActicity" />
         <activity android:name="com.gizwits.framework.widget.AboutVersionActivity" >

@@ -4,4 +4,3 @@
     <item android:drawable="@drawable/power_off" android:state_selected="false"></item>
 
 </selector>
-<!-- From: file:/F:/9-IoT/Cloud%2D%2DGizwit/Android/Gizwits-SmartSocket_Android/app/src/main/res/drawable/selector_power.xml -->

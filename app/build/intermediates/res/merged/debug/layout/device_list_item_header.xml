@@ -17,4 +17,4 @@
         android:layout_width="fill_parent"
         android:layout_height="2dp"
         android:background="@color/text_gray" />
-</LinearLayout><!-- From: file:/F:/9-IoT/Cloud%2D%2DGizwit/Android/Gizwits-SmartSocket_Android/app/src/main/res/layout/device_list_item_header.xml -->
+</LinearLayout>

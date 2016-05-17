@@ -39,6 +39,7 @@ import android.widget.ImageView;
 
 import com.gizwits.framework.activity.BaseActivity;
 import com.gizwits.framework.activity.account.LoginActivity;
+import com.gizwits.framework.activity.onboarding.AutoConfigActivity;
 import com.gizwits.framework.activity.onboarding.BindingDeviceActivity;
 import com.gizwits.framework.activity.onboarding.SearchDeviceActivity;
 import com.gizwits.framework.adapter.DeviceListAdapter;
@@ -88,7 +89,7 @@ public class DeviceListActivity extends BaseActivity implements
 	private Dialog dialog;
 	
 	/** 登陆设备超时时间 */
-	private int LoginDeviceTimeOut = 60000;
+	private int LoginDeviceTimeOut = 5000;
 
 	/** 网络状态广播接受器. */
 	private ConnecteChangeBroadcast mChangeBroadcast = new ConnecteChangeBroadcast();
@@ -264,7 +265,7 @@ public class DeviceListActivity extends BaseActivity implements
 		switch (v.getId()) {
 		case R.id.ivAdd:
 			IntentUtils.getInstance().startActivity(DeviceListActivity.this,
-					SearchDeviceActivity.class);
+					AutoConfigActivity.class/*SearchDeviceActivity.class*/);
 			break;
 		case R.id.ivLogout:
 			if (dialog == null) {

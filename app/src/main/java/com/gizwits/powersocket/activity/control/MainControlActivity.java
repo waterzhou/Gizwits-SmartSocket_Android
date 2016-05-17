@@ -113,6 +113,8 @@ public class MainControlActivity extends BaseActivity implements OnClickListener
 	/** 是否超时标志位 */
 	private boolean isTimeOut = false;
 
+	private boolean isPowerProcessing = false;
+
 	/** The m adapter. */
 	private MenuDeviceAdapter mAdapter;
 
@@ -184,7 +186,7 @@ public class MainControlActivity extends BaseActivity implements OnClickListener
 					}
 					try {
 						if (deviceDataMap.get("data") != null) {
-							Log.i("info", (String) deviceDataMap.get("data"));
+							Log.i(TAG, (String) deviceDataMap.get("data"));
 							inputDataToMaps(statuMap, (String) deviceDataMap.get("data"));
 						}
 						// 返回主线程处理P0数据刷新
@@ -204,10 +206,11 @@ public class MainControlActivity extends BaseActivity implements OnClickListener
 
 					// 开关更新
 					updatePower((Boolean) statuMap.get(JsonKeys.ON_OFF));
-//					// 能耗更新
-//					String consumption = (String) statuMap.get(JsonKeys.POWER_CONSUMPTION);
-//					if (!StringUtils.isEmpty(consumption))
-//						setConsumption(Integer.parseInt(consumption));
+					isPowerProcessing = false;
+					// 能耗更新
+					String consumption = (String) statuMap.get(JsonKeys.POWER_CONSUMPTION);
+					if (!StringUtils.isEmpty(consumption))
+						setConsumption(Integer.parseInt(consumption));
 //					// 定时更新
 //					boolean isTurnOn = (Boolean) statuMap.get(JsonKeys.TIME_ON_OFF);
 //					String minOn = (String) statuMap.get(JsonKeys.TIME_ON_MINUTE);
@@ -474,17 +477,21 @@ public class MainControlActivity extends BaseActivity implements OnClickListener
 		if (mView.isOpen()) {
 			return;
 		}
-
 		switch (v.getId()) {
 		case R.id.btnPower:
+			if(isPowerProcessing) {
+				Log.d(TAG, "ignore this press................");
+				break;
+			}
 			mCenter.cPowerOn(mXpgWifiDevice, !btnPower.isSelected());
-			updatePower(!btnPower.isSelected());
+			isPowerProcessing = true;
+			//updatePower(!btnPower.isSelected());
 			break;
 		case R.id.ivMenu:
 			mView.toggle();
 			break;
 		case R.id.btnAppoinment:
-			startActivity(new Intent(MainControlActivity.this, AppointmentActivity.class));
+			//startActivity(new Intent(MainControlActivity.this, AppointmentActivity.class));
 			break;
 		}
 	}

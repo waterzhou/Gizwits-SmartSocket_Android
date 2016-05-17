@@ -23,4 +23,4 @@
         android:textColor="@color/text_gray"
         android:textSize="20sp" />
 
-</LinearLayout><!-- From: file:/F:/9-IoT/Cloud%2D%2DGizwit/Android/Gizwits-SmartSocket_Android/app/src/main/res/layout/manage_details_item.xml -->
+</LinearLayout>

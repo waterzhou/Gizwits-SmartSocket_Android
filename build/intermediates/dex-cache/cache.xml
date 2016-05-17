@@ -2,11 +2,74 @@
 <items version="2" >
 
     <item
-        jar="F:\9-IoT\Cloud--Gizwit\Android\Gizwits-SmartSocket_Android\app\libs\libatmelsmartconfig.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="f7ce7aa7a2f3a9f0e2337146bed941358076780a">
-        <dex dex="F:\9-IoT\Cloud--Gizwit\Android\Gizwits-SmartSocket_Android\app\build\intermediates\pre-dexed\debug\libatmelsmartconfig-cde276c32c64c378a68b4c27c30e2928d63a6f7d.jar" />
+        jar="F:\9-IoT\Cloud--Gizwit\Android\Gizwits-SmartSocket_Android\app\libs\XPGWiFiSDK.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="bc3df50d8302ce1d3f2b4a88caf74953f79b15f0">
+        <dex dex="F:\9-IoT\Cloud--Gizwit\Android\Gizwits-SmartSocket_Android\app\build\intermediates\transforms\dex\debug\folders\1000\2\XPGWiFiSDK_ab3093a16ddf149780fb670e101a434fc4129c7c\classes.dex" />
+    </item>
+    <item
+        jar="F:\9-IoT\Cloud--Gizwit\Android\Gizwits-SmartSocket_Android\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="e2d48ad0d349302408cb6e3c2d9c37ae06da8cc1">
+        <dex dex="F:\9-IoT\Cloud--Gizwit\Android\Gizwits-SmartSocket_Android\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_e26c517bdf92179a387a85a73d144280b8971b9c\classes.dex" />
+    </item>
+    <item
+        jar="F:\9-IoT\Cloud--Gizwit\Android\Gizwits-SmartSocket_Android\app\libs\libEsptouch_v0.3.3.4_3.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="6e8b3a0511138e611f11abb6efa72d648c8f399c">
+        <dex dex="F:\9-IoT\Cloud--Gizwit\Android\Gizwits-SmartSocket_Android\app\build\intermediates\transforms\dex\debug\folders\1000\2\libEsptouch_v0.3.3.4_3_c7f4aecde0d3c838ff56d74029c66da5ccde2fa3\classes.dex" />
+    </item>
+    <item
+        jar="F:\9-IoT\Cloud--Gizwit\Android\Gizwits-SmartSocket_Android\app\libs\simpleconfiglib.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="6a0393f607d6969fc67e03bc713f9d70bb167cbd">
+        <dex dex="F:\9-IoT\Cloud--Gizwit\Android\Gizwits-SmartSocket_Android\app\build\intermediates\transforms\dex\debug\folders\1000\2\simpleconfiglib_ae38dc9301417cff91bbea0efd8da1e7175ec3f0\classes.dex" />
+    </item>
+    <item
+        jar="F:\9-IoT\Cloud--Gizwit\Android\Gizwits-SmartSocket_Android\app\libs\zxing.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="6fe22c135f19470d05b0816d5996c442ef67da3f">
+        <dex dex="F:\9-IoT\Cloud--Gizwit\Android\Gizwits-SmartSocket_Android\app\build\intermediates\transforms\dex\debug\folders\1000\2\zxing_79bb0e0b0bc8e8dce4c5b3e321b465378a24787b\classes.dex" />
+    </item>
+    <item
+        jar="F:\9-IoT\Cloud--Gizwit\Android\Gizwits-SmartSocket_Android\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="bef832fae21c58ca612dc607c27680c8972eae18">
+        <dex dex="F:\9-IoT\Cloud--Gizwit\Android\Gizwits-SmartSocket_Android\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_6204a8870ff03a3977299f2f6e615904574f545c\classes.dex" />
+    </item>
+    <item
+        jar="F:\9-IoT\Cloud--Gizwit\Android\Gizwits-SmartSocket_Android\app\libs\libForEElink.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="a1202639b111412975bd004dcbc34222c8a43d12">
+        <dex dex="F:\9-IoT\Cloud--Gizwit\Android\Gizwits-SmartSocket_Android\app\build\intermediates\transforms\dex\debug\folders\1000\2\libForEElink_0e901424ab544a16f04f7368cb08ed5a1ab0bc75\classes.dex" />
+    </item>
+    <item
+        jar="D:\androidstudio\extras\android\m2repository\com\android\support\support-v4\19.1.0\support-v4-19.1.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
+        <dex dex="F:\9-IoT\Cloud--Gizwit\Android\Gizwits-SmartSocket_Android\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-v4-19.1.0_650a43ff5842718f056fdce433431654d76528f8\classes.dex" />
+    </item>
+    <item
+        jar="F:\9-IoT\Cloud--Gizwit\Android\Gizwits-SmartSocket_Android\app\libs\nineoldandroids-2.4.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="59f19e43354d32de831379c23ce03bb259a4c2b7">
+        <dex dex="F:\9-IoT\Cloud--Gizwit\Android\Gizwits-SmartSocket_Android\app\build\intermediates\transforms\dex\debug\folders\1000\2\nineoldandroids-2.4.0_9afc9e41b97913fae825da1e02ea0c388a15c5fa\classes.dex" />
+    </item>
+    <item
+        jar="F:\9-IoT\Cloud--Gizwit\Android\Gizwits-SmartSocket_Android\app\libs\easylink_only.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="f2d8275600cf3a079679fbfb32eff1dac31fef06">
+        <dex dex="F:\9-IoT\Cloud--Gizwit\Android\Gizwits-SmartSocket_Android\app\build\intermediates\transforms\dex\debug\folders\1000\2\easylink_only_cca0cc0cc9092f61b6ed615f69aabe5e27c8ed9d\classes.dex" />
     </item>
 
 </items>

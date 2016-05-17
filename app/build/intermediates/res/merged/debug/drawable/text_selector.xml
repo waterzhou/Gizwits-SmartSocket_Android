@@ -3,4 +3,3 @@
     <item android:state_selected="true" android:color="@color/text_blue"></item>
     <item android:state_selected="false" android:color="@color/text_gray"></item>
 </selector>
-<!-- From: file:/F:/9-IoT/Cloud%2D%2DGizwit/Android/Gizwits-SmartSocket_Android/app/src/main/res/drawable/text_selector.xml -->

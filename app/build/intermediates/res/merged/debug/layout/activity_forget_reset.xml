@@ -232,4 +232,4 @@
             android:text="已发送至您的邮箱，\n请登录邮箱查收！" />
     </RelativeLayout>
 
-</RelativeLayout><!-- From: file:/F:/9-IoT/Cloud%2D%2DGizwit/Android/Gizwits-SmartSocket_Android/app/src/main/res/layout/activity_forget_reset.xml -->
+</RelativeLayout>

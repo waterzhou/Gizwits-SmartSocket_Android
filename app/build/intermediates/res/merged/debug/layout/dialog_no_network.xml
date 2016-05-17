@@ -30,4 +30,4 @@
             android:text="@string/dialog_nonet_msg" />
     </LinearLayout>
 
-</FrameLayout><!-- From: file:/F:/9-IoT/Cloud%2D%2DGizwit/Android/Gizwits-SmartSocket_Android/app/src/main/res/layout/dialog_no_network.xml -->
+</FrameLayout>

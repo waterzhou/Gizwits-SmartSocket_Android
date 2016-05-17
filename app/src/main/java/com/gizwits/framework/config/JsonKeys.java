@@ -28,13 +28,16 @@ package com.gizwits.framework.config;
 public class JsonKeys {
 
 	/** 产品名. */
-	public final static String PRODUCT_NAME = "机智云插座";
+	public final static String PRODUCT_NAME = "atmel机智云demo";
 
 	/** 实体字段名，代表对应的项目. */
 	public final static String KEY_ACTION = "entity0";
 
 	/** 开关. */
 	public final static String ON_OFF = "OnOff";
+
+	/** 能耗. */
+	public final static String POWER_CONSUMPTION = "Power_Consumption";
 
 	/** 每周重复. */
 	public final static String WEEK_REPEAT = "Week_Repeat";
@@ -51,8 +54,7 @@ public class JsonKeys {
 	/** 倒计时. */
 	public final static String COUNT_DOWN_MINUTE = "CountDown_Minute";
 	
-	/** 能耗. */
-	public final static String POWER_CONSUMPTION = "Power_Consumption";
+
 	
 	/** 是否启用定时. */
 	public final static String TIME_ON_OFF = "Time_OnOff";

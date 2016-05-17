@@ -27,8 +27,6 @@
     <uses-feature android:name="android.hardware.camera" />
     <uses-feature android:name="android.hardware.camera.autofocus" />
 
-    <uses-permission android:name="android.permission.GET_TASKS" />
-
     <application
         android:name="com.gizwits.framework.XpgApplication"
         android:allowBackup="true"
@@ -51,14 +49,15 @@
         <activity android:name="com.gizwits.framework.activity.account.UserManageActivity" />
         <activity
             android:name="com.gizwits.framework.activity.device.DeviceListActivity"
-            android:launchMode="singleTask" />
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
         <activity android:name="com.gizwits.framework.activity.device.DeviceManageListActivity" />
         <activity android:name="com.gizwits.framework.activity.device.DeviceManageDetailActivity" />
-        <activity android:name="com.gizwits.framework.activity.onboarding.AirlinkActivity" />
+        <activity
+            android:name="com.gizwits.framework.activity.onboarding.AirlinkActivity"
+            android:screenOrientation="portrait" />
         <activity android:name="com.gizwits.framework.activity.onboarding.AutoConfigActivity" />
         <activity android:name="com.gizwits.framework.activity.onboarding.BindingDeviceActivity" />
-        <activity android:name="com.gizwits.framework.activity.onboarding.ConfigFailedActivity" />
-        <activity android:name="com.gizwits.framework.activity.onboarding.GetPassAndBind" />
         <activity
             android:name="com.gizwits.framework.activity.onboarding.SearchDeviceActivity"
             android:launchMode="singleTask" />
@@ -69,10 +68,10 @@
             android:name="zxing.CaptureActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait" />
-        <activity android:name="com.gizwits.powersocket.activity.slipbar.SlipBarActivity" />
         <activity
             android:name="com.gizwits.powersocket.activity.control.MainControlActivity"
-            android:launchMode="singleTask" />
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
         <activity android:name="com.gizwits.powersocket.activity.control.AppointmentActivity" />
         <activity android:name="com.gizwits.powersocket.activity.control.AlarmListActicity" />
         <activity android:name="com.gizwits.framework.widget.AboutVersionActivity" >

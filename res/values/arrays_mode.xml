@@ -9,6 +9,9 @@
         <item>乐鑫</item>
         <item>高通</item>
         <item>TI</item>
+        <item>FSK</item>
+        <item>MXCHIP3</item>
+        <item>AtmelEE</item>
     </string-array>
 
 </resources>

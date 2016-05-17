@@ -77,7 +77,7 @@ public class BaseActivity extends Activity {
 	/**
 	 * 指令管理器.
 	 */
-	protected CmdCenter mCenter;
+	protected  CmdCenter mCenter;
 
 	/**
 	 * SharePreference处理类.

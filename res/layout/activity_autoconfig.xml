@@ -55,12 +55,12 @@
             android:text="@string/WIFI_MODE"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
-        <Spinner
-            android:id="@+id/sp_mode"
-            android:layout_width="100dp"
-            android:layout_height="40dp"
-            android:entries="@array/MODE"
-            android:spinnerMode="dropdown" />
+        <!--<Spinner-->
+            <!--android:id="@+id/sp_mode"-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:entries="@array/MODE"-->
+            <!--android:spinnerMode="dropdown" />-->
     </LinearLayout>
 
     <LinearLayout

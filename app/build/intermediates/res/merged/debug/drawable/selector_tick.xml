@@ -3,4 +3,3 @@
     <item android:drawable="@drawable/slib_tick" android:state_selected="true"/>
 	  <item android:drawable="@color/fullAlpha" android:state_selected="false"/>
 </selector>
-<!-- From: file:/F:/9-IoT/Cloud%2D%2DGizwit/Android/Gizwits-SmartSocket_Android/app/src/main/res/drawable/selector_tick.xml -->

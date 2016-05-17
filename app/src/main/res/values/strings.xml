@@ -1,6 +1,6 @@
 <resources>
 
-    <string name="app_name">智能云插座</string>
+    <string name="app_name">atmel机智云demo</string>
     <string name="wifi_first">请先连上Wi-Fi网络</string>
     <string name="wifi_name">Wi-Fi名称:</string>
     <string name="tip_exit">再按一次退出程序</string>
@@ -96,7 +96,7 @@
     <string name="search_device_already_configure">已配置的设备</string>
     <string name="search_device_tips1">你的网络中还没有已配置的设备,如已经配置过,\n请确认手机正连接着与设备相同的wifi.</string>
     <string name="search_device_configure_qr_code">二维码扫描添加虚拟设备</string>
-    <string name="search_device_configure">我要配置gokit</string>
+    <string name="search_device_configure">一键配置</string>
     <string name="account_manage">账号管理</string>
     <string name="about">关于</string>
     <string name="about_demo">版本信息</string>

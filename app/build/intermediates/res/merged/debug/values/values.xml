@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/F:/9-IoT/Cloud%2D%2DGizwit/Android/Gizwits-SmartSocket_Android/app/src/main/res/values/arrays_mode.xml -->
-    <eat-comment/>
     <string-array name="MODE">
         <item>Atmel</item>
         <item>庆科</item>
@@ -12,8 +10,6 @@
         <item>高通</item>
         <item>TI</item>
     </string-array>
-    <!-- From: file:/F:/9-IoT/Cloud%2D%2DGizwit/Android/Gizwits-SmartSocket_Android/app/src/main/res/values/colors.xml -->
-    <eat-comment/>
     <color name="background_blue">#297dee</color>
     <color name="background_blue_white">#dbf3fc</color>
     <color name="background_gray">#eaeaea</color>
@@ -53,8 +49,6 @@
     <color name="viewfinder_mask">#60000000</color>
     <color name="white">#fff</color>
     <color name="yellow">#ffff00</color>
-    <!-- From: file:/F:/9-IoT/Cloud%2D%2DGizwit/Android/Gizwits-SmartSocket_Android/app/src/main/res/values/ids.xml -->
-    <eat-comment/>
     <item name="auto_focus" type="id"/>
     <item name="decode" type="id"/>
     <item name="decode_failed" type="id"/>
@@ -67,8 +61,6 @@
     <item name="return_scan_result" type="id"/>
     <item name="search_book_contents_failed" type="id"/>
     <item name="search_book_contents_succeeded" type="id"/>
-    <!-- From: file:/F:/9-IoT/Cloud%2D%2DGizwit/Android/Gizwits-SmartSocket_Android/app/src/main/res/values/strings.xml -->
-    <eat-comment/>
     <string name="SDKversion">当前sdk版本：</string>
     <string name="WIFI_MODE">wifi模块类型</string>
     <string name="about">关于</string>
@@ -83,7 +75,7 @@
     <string name="airlink_tips_error2">1.设备是否正常运行？\n2.Wi-Fi网络是否连接顺畅？</string>
     <string name="airlink_tips_error3">请拔下设备电源，再重新接通电源，再点击重试</string>
     <string name="airlink_tips_start">请按下设备按键,灯闪即表示设备已进入配置模式,\n点击开始配置</string>
-    <string name="app_name">智能云插座</string>
+    <string name="app_name">atmel机智云demo</string>
     <string name="appoinment">预约</string>
     <string name="appversion">当前版本：V1.1.0</string>
     <string name="autoconfig_keep_wifi">请保持Wi-Fi连接</string>
@@ -170,7 +162,7 @@
     <string name="reset_by_email">通过邮箱重置密码</string>
     <string name="reset_by_phone">通过手机重置密码</string>
     <string name="search_device_already_configure">已配置的设备</string>
-    <string name="search_device_configure">我要配置gokit</string>
+    <string name="search_device_configure">一键配置</string>
     <string name="search_device_configure_qr_code">二维码扫描添加虚拟设备</string>
     <string name="search_device_tips1">你的网络中还没有已配置的设备,如已经配置过,\n请确认手机正连接着与设备相同的wifi.</string>
     <string name="setting_password">设置密码</string>
@@ -200,8 +192,6 @@
     <string name="wash">洗衣机</string>
     <string name="wifi_first">请先连上Wi-Fi网络</string>
     <string name="wifi_name">Wi-Fi名称:</string>
-    <!-- From: file:/F:/9-IoT/Cloud%2D%2DGizwit/Android/Gizwits-SmartSocket_Android/app/src/main/res/values/styles.xml -->
-    <eat-comment/>
     <style name="AppBaseTheme" parent="android:Theme.Light">
         <!--
             Theme customizations available in newer API levels can go in

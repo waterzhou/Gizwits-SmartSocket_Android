@@ -20,4 +20,4 @@
         android:textColor="@color/text_red"
         android:textSize="20sp" />
 
-</LinearLayout><!-- From: file:/F:/9-IoT/Cloud%2D%2DGizwit/Android/Gizwits-SmartSocket_Android/app/src/main/res/layout/alarm_list_item.xml -->
+</LinearLayout>

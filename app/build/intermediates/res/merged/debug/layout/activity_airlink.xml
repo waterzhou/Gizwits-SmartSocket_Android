@@ -128,12 +128,11 @@
             android:id="@+id/btnRetry"
             style="@style/ButtonBlue"
             android:text="@string/airlink_btn_retry" />
-        <Button
-            android:layout_margin="10dp"
-            android:id="@+id/btnSoftap"
-            style="@style/ButtonBlue"
-            android:text="@string/airlink_btn_softap" />
+        <!--<Button-->
+            <!--android:layout_margin="10dp"-->
+            <!--android:id="@+id/btnSoftap"-->
+            <!--style="@style/ButtonBlue"-->
+            <!--android:text="@string/airlink_btn_softap" />-->
     </LinearLayout>
 
 </LinearLayout>
-<!-- From: file:/F:/9-IoT/Cloud%2D%2DGizwit/Android/Gizwits-SmartSocket_Android/app/src/main/res/layout/activity_airlink.xml -->

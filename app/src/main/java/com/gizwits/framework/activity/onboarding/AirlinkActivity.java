@@ -36,12 +36,16 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.atmel.AtmelSmartconfig;
+import com.ForEE.ForEESmartconfig;
 import com.gizwits.framework.activity.BaseActivity;
 import com.gizwits.framework.activity.device.DeviceListActivity;
 import com.gizwits.powersocket.R;
 import com.xpg.common.system.IntentUtils;
 import com.xpg.common.useful.StringUtils;
+import com.xtremeprog.xpgconnect.GWifiDevice;
+import com.xtremeprog.xpgconnect.GWifiErrorCode;
+import com.xtremeprog.xpgconnect.GWifiSDK;
+import com.xtremeprog.xpgconnect.GizLogger;
 import com.xtremeprog.xpgconnect.XPGWifiDevice;
 import com.xtremeprog.xpgconnect.XPGWifiSDK;
 import com.xtremeprog.xpgconnect.XPGWifiSDK.XPGWifiGAgentType;
@@ -65,10 +69,7 @@ public class AirlinkActivity extends BaseActivity implements OnClickListener {
 	 */
 	private Button btnRetry;
 
-	/**
-	 * The btn softap.
-	 */
-	private Button btnSoftap;
+
 
 	/**
 	 * The iv back.
@@ -105,8 +106,7 @@ public class AirlinkActivity extends BaseActivity implements OnClickListener {
 	/** The str psw. */
 	private String strPsw;
 
-	
-	private int mode_temp;
+
 	ArrayList<XPGWifiGAgentType> types;
 	ArrayList<XPGWifiSDK.XPGWifiGAgentType> typeList;
 	//
@@ -142,7 +142,6 @@ public class AirlinkActivity extends BaseActivity implements OnClickListener {
 
 	}
 
-	private AtomicBoolean isStopConfig = new AtomicBoolean(false);
 	/**
 	 * The handler.
 	 */
@@ -169,9 +168,6 @@ public class AirlinkActivity extends BaseActivity implements OnClickListener {
 				break;
 
 			case CONFIG_FAILED:
-				if (mode_temp == 0) {
-					AtmelSmartconfig.getInstance().stopAtmelsmartconfig();
-				}
 				showLayout(UI_STATE.Result);
 				break;
 
@@ -201,7 +197,7 @@ public class AirlinkActivity extends BaseActivity implements OnClickListener {
 	private void initEvents() {
 		btnConfig.setOnClickListener(this);
 		btnRetry.setOnClickListener(this);
-		btnSoftap.setOnClickListener(this);
+		//btnSoftap.setOnClickListener(this);
 		ivBack.setOnClickListener(this);
 	}
 
@@ -211,7 +207,7 @@ public class AirlinkActivity extends BaseActivity implements OnClickListener {
 	private void initViews() {
 		btnConfig = (Button) findViewById(R.id.btnConfig);
 		btnRetry = (Button) findViewById(R.id.btnRetry);
-		btnSoftap = (Button) findViewById(R.id.btnSoftap);
+
 		tvTick = (TextView) findViewById(R.id.tvTick);
 		ivBack = (ImageView) findViewById(R.id.ivBack);
 		llStartConfig = (LinearLayout) findViewById(R.id.llStartConfig);
@@ -233,7 +229,6 @@ public class AirlinkActivity extends BaseActivity implements OnClickListener {
 			} else {
 				strPsw = "";
 			}
-			mode_temp = getIntent().getIntExtra("Temp", 0);
 		}
 		typeList = new ArrayList<XPGWifiSDK.XPGWifiGAgentType>();
 		typeList.add(XPGWifiSDK.XPGWifiGAgentType.XPGWifiGAgentTypeMXCHIP);// 庆科
@@ -243,6 +238,11 @@ public class AirlinkActivity extends BaseActivity implements OnClickListener {
 		typeList.add(XPGWifiSDK.XPGWifiGAgentType.XPGWifiGAgentTypeESP);// 乐鑫
 		typeList.add(XPGWifiSDK.XPGWifiGAgentType.XPGWifiGAgentTypeQCA);// 高通
 		typeList.add(XPGWifiSDK.XPGWifiGAgentType.XPGWifiGAgentTypeTI);// TI
+		typeList.add(XPGWifiSDK.XPGWifiGAgentType.XPGWifiGAgentTypeFSK);// FSK
+		typeList.add(XPGWifiSDK.XPGWifiGAgentType.XPGWifiGAgentTypeMXCHIP3);// MXCHIP3
+		typeList.add(XPGWifiSDK.XPGWifiGAgentType.XPGWifiGAgentTypeBL);// BL
+		typeList.add(XPGWifiSDK.XPGWifiGAgentType.XPGWifiGAgentTypeAtmelEE);// atmel
+
 	}
 
 	private enum UI_STATE {
@@ -288,14 +288,7 @@ public class AirlinkActivity extends BaseActivity implements OnClickListener {
 		case R.id.btnRetry:
 			onBackPressed();
 			break;
-		case R.id.btnSoftap:
-			// spftap配置
-			Intent intent = new Intent(AirlinkActivity.this, SoftApConfigActivity.class);
-			intent.putExtra("ssid", strSSid);
-			intent.putExtra("psw", strPsw);
-			startActivity(intent);
-			finish();
-			break;
+
 		case R.id.ivBack:
 			onBackPressed();
 			break;
@@ -303,28 +296,6 @@ public class AirlinkActivity extends BaseActivity implements OnClickListener {
 
 	}
 
-	private void tryGetList() {
-		String uid = setmanager.getUid();
-		String token = setmanager.getToken();
-		mCenter.cGetBoundDevices(uid, token);
-	}
-
-	private void fastProvisionCheckLoop (){
-		(new Thread() {
-			public void run() {
-				Log.d(TAG, "Check loop start");
-				while (!isStopConfig.get())
-				{
-					try {
-						Thread.sleep(500);
-					} catch (Exception e) {
-						Log.e(TAG, e.getMessage());
-					}
-					//tryGetList();
-				}
-			}
-		}).start();
-	}
 	/**
 	 * Start airlink.
 	 */
@@ -334,7 +305,6 @@ public class AirlinkActivity extends BaseActivity implements OnClickListener {
 		showLayout(UI_STATE.Setting);
 		timer = new Timer();
 		timer.schedule(new TimerTask() {
-
 			@Override
 			public void run() {
 				handler.sendEmptyMessage(handler_key.TICK_TIME.ordinal());
@@ -342,16 +312,8 @@ public class AirlinkActivity extends BaseActivity implements OnClickListener {
 		}, 1000, 1000);
 		//
 		types = new ArrayList<XPGWifiSDK.XPGWifiGAgentType>();
-		types.add(typeList.get(mode_temp));
-		if (mode_temp == 0) {
-			Log.d(TAG, "Choose to use atmel module");
-			//handler.sendEmptyMessage(handler_key.CONFIG_START.ordinal());
-			fastProvisionCheckLoop ();
-			AtmelSmartconfig.getInstance().startAtmelsmartconfig(this, strSSid, strPsw, 60);
-
-		} else {
-			mCenter.cSetAirLink(strSSid, strPsw, types);
-		}
+		types.add(typeList.get(10));
+		mCenter.cSetAirLink(strSSid, strPsw, types);
 	}
 
 	@Override
@@ -364,7 +326,7 @@ public class AirlinkActivity extends BaseActivity implements OnClickListener {
 		case Setting:
 			break;
 		case Result:
-			startActivity(new Intent(AirlinkActivity.this, SearchDeviceActivity.class));
+			startActivity(new Intent(AirlinkActivity.this, AutoConfigActivity.class));
 			finish();
 			break;
 
@@ -382,16 +344,6 @@ public class AirlinkActivity extends BaseActivity implements OnClickListener {
 	protected void didSetDeviceWifi(int error, XPGWifiDevice device) {
 		if (error == 0) {
 			handler.sendEmptyMessage(handler_key.CONFIG_SUCCESS.ordinal());
-		} else {
-			handler.sendEmptyMessage(handler_key.CONFIG_FAILED.ordinal());
-		}
-	}
-
-	protected void didDiscovered(int error, List<XPGWifiDevice> deviceList) {
-		deviceslist = deviceList;
-		isStopConfig.set(true);
-		if (error == 0) {
-			//handler.sendEmptyMessage(handler_key.CONFIG_SUCCESS.ordinal());
 		} else {
 			handler.sendEmptyMessage(handler_key.CONFIG_FAILED.ordinal());
 		}

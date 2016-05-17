@@ -2,11 +2,9 @@
     package="com.gizwits.powersocket"
     android:versionCode="1"
     android:versionName="1.0" >
-
     <uses-sdk
         android:minSdkVersion="14"
         android:targetSdkVersion="19" />
-
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
@@ -26,8 +24,6 @@
     <uses-feature android:name="android.hardware.camera" />
     <uses-feature android:name="android.hardware.camera.autofocus" />
 
-    <uses-permission android:name="android.permission.GET_TASKS" />
-
     <application
         android:name="com.gizwits.framework.XpgApplication"
         android:allowBackup="true"
@@ -38,7 +34,6 @@
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -50,14 +45,12 @@
         <activity android:name="com.gizwits.framework.activity.account.UserManageActivity" />
         <activity
             android:name="com.gizwits.framework.activity.device.DeviceListActivity"
-            android:launchMode="singleTask" />
+            android:launchMode="singleTask"  android:screenOrientation="portrait" />
         <activity android:name="com.gizwits.framework.activity.device.DeviceManageListActivity" />
         <activity android:name="com.gizwits.framework.activity.device.DeviceManageDetailActivity" />
-        <activity android:name="com.gizwits.framework.activity.onboarding.AirlinkActivity" />
+        <activity android:name="com.gizwits.framework.activity.onboarding.AirlinkActivity" android:screenOrientation="portrait" />
         <activity android:name="com.gizwits.framework.activity.onboarding.AutoConfigActivity" />
         <activity android:name="com.gizwits.framework.activity.onboarding.BindingDeviceActivity" />
-        <activity android:name="com.gizwits.framework.activity.onboarding.ConfigFailedActivity" />
-        <activity android:name="com.gizwits.framework.activity.onboarding.GetPassAndBind" />
         <activity
             android:name="com.gizwits.framework.activity.onboarding.SearchDeviceActivity"
             android:launchMode="singleTask" />
@@ -68,10 +61,9 @@
             android:name="zxing.CaptureActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait" />
-        <activity android:name="com.gizwits.powersocket.activity.slipbar.SlipBarActivity" />
         <activity
             android:name="com.gizwits.powersocket.activity.control.MainControlActivity"
-            android:launchMode="singleTask" />
+            android:launchMode="singleTask"  android:screenOrientation="portrait"/>
         <activity android:name="com.gizwits.powersocket.activity.control.AppointmentActivity" />
         <activity android:name="com.gizwits.powersocket.activity.control.AlarmListActicity" />
         <activity android:name="com.gizwits.framework.widget.AboutVersionActivity" >

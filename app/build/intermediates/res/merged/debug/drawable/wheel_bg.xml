@@ -28,4 +28,4 @@
 			<gradient android:startColor="#AAA" android:centerColor="#FFF" android:endColor="#AAA" android:angle="90"/>
 		</shape>
 	</item>
-</layer-list><!-- From: file:/F:/9-IoT/Cloud%2D%2DGizwit/Android/Gizwits-SmartSocket_Android/app/src/main/res/drawable/wheel_bg.xml -->
+</layer-list>
