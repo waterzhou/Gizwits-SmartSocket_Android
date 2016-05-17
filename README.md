@@ -70,12 +70,11 @@ XPGWifiSDK 版本号
 
     ▪	Atmel Winc1510＋app使用流程（体验配置、绑定实体设备等流程）
 
-    1.免费申请gokit，http://gizwits.com/zh-cn/gokit
-    2.下载gokit开源代码并按说明替换为智能云插座的产品标识码
-    3.在app上注册并登录帐号
-    4.通过我要配置gokit按钮，使用Airlink或SoftAP模式配置gokit入网
-    5.绑定gokit
-    6.进入控制界面
+    1.在app上注册并登录帐号
+    2.通过配置"+"按钮，使用Airlink配置gokit入网
+    3.按键使设备进入待配置界面。
+    4.开始配置，并绑定wifi 设备
+    5.进入控制界面
 
 问题反馈
 
