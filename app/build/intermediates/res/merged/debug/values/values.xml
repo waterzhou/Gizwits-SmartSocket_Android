@@ -96,7 +96,7 @@
     <string name="change_password">修改密码</string>
     <string name="change_success">修改成功</string>
     <string name="confirm">确定</string>
-    <string name="consumption">用电量：</string>
+    <string name="consumption">温度：</string>
     <string name="curve_text1">室内温度曲线</string>
     <string name="delay">延时</string>
     <string name="delay_appointment">延时预约</string>

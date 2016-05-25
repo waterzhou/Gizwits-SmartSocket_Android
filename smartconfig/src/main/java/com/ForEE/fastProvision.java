@@ -13,35 +13,13 @@ import java.util.concurrent.atomic.AtomicBoolean;
 public class fastProvision {
     private final String TAG = "FastProvision";
     private static final int SM_PORT = 28100;
-    private static final int RM_PORT = 28105;
-    private static Thread wifiConfigThread = null;
-    private static int wifiConfigInterval = 500;
     private static String ip;
     private UDPSocketClient mSocketClient = null;
     private AtomicBoolean isFastConfigDone = new AtomicBoolean(false);
-    private AtomicBoolean isStopSending = new AtomicBoolean(false);
 
     public fastProvision() {
         this.mSocketClient = new UDPSocketClient();
     }
-
-//    private void fastProvisionCheckLoop (){
-//        (new Thread() {
-//            public void run() {
-//                int count = 0;
-//                Log.d(TAG, "Check loop start");
-//                while (!isFastConfigDone.get())
-//                {
-//                    try {
-//                        Thread.sleep(500);
-//                    } catch (Exception e) {
-//                        Log.e(TAG, e.getMessage());
-//                    }
-//                    count ++;
-//                }
-//            }
-//        }).start();
-//    }
 
     private void fastProvisionExecuteLoop (final String ssid, final String psw){
         (new Thread() {
@@ -111,7 +89,6 @@ public class fastProvision {
     }
 
     public synchronized void startFastProvision( Context context, String ssid, String psw,int timeout) {
-        //fastProvisionCheckLoop();
         fastProvisionExecuteLoop(ssid, psw);
     }
 

@@ -325,13 +325,13 @@ public class AirlinkActivity extends BaseActivity implements OnClickListener {
 			break;
 		case Setting:
 			break;
+
 		case Result:
 			startActivity(new Intent(AirlinkActivity.this, AutoConfigActivity.class));
 			finish();
 			break;
 
 		}
-
 	}
 
 	/*

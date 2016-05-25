@@ -10,7 +10,7 @@
     <string name="timing_appointment">定时预约</string>
     <string name="delay">延时</string>
     <string name="delay_appointment">延时预约</string>
-    <string name="consumption">用电量：</string>
+    <string name="consumption">温度：</string>
     <string name="start_time">开启时间</string>
     <string name="end_time">关闭时间</string>
     <string name="repeat">重复</string>
